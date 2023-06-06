@@ -1,0 +1,9 @@
+setup.py
+bird_utils/__init__.py
+bird_utils/datasets.py
+bird_utils/models.py
+bird_utils/train_vgg.py
+bird_utils.egg-info/PKG-INFO
+bird_utils.egg-info/SOURCES.txt
+bird_utils.egg-info/dependency_links.txt
+bird_utils.egg-info/top_level.txt
