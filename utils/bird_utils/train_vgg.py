@@ -150,7 +150,7 @@ def train(
             break
 
         print(f"  saving current model!")
-        torch.save(vgg_model.state_dict(), model_params_path + f"_e{i + 1}_curr.pth")
+        torch.save(vgg_model.state_dict(), model_params_path + "_curr.pth")
 
         print("")
 
