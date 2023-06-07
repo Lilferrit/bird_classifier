@@ -136,7 +136,7 @@ def train(
         train_accuracies.append(current_train_accuracy)
 
         val_losses.append(current_val_loss)
-        val_accuracies.append(current_val_loss)
+        val_accuracies.append(current_val_accuracy)
 
         if current_val_loss < best_ce_loss:
             curr_patience_interval = 0
