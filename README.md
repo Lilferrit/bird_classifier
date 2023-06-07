@@ -16,6 +16,8 @@ cd bird_utils
 pip install -e .
 ```
 
+[Project Video Available Here!!](https://youtu.be/QvrcDlf6m3A)
+
 ## Problem Discription
 
 Training an entire deep learning model, such as models from the VGG family is very computationally
