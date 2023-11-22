@@ -144,31 +144,3 @@ From the graphs, it is clear that transfer learning VGG19 and VGG11 perform very
 is even more clear when the trained VGG19 and VGG11 networks were tested against the unaugmented
 dataset. On the unaugmented dataset, VGG11 and VGG19 achieved an accuracy of 49% and 51%
 respectively.
-
-## Discussion
-
-Over the course of this experiment several issues were encountered. One, the computate times
-provided by google colab were insuffecient to practically train both models. Therefore, the
-training was migrated to a local pc, but this migration process proved to be a serious delay, as
-many issues were faced with drivers. Next, originally VGG19 was trained for 40 epochs. However,
-during the training process yet another software issue was ancountered (this one related to disk
-space), and both the trained VGG19 network and the VGG11 network, for which training was in process,
-was lost. Nearly 10 hours of training was lost, and I ended up having to reinstall Ubuntu on the 
-host machine.
-
-If I were to continue working on this project, I would train both VGG11 and VGG19 for the original
-40 epochs, as well as train VGG13 and VGG16 for the same. This would present a more clear picture
-of which models from the VGG family are fit for transfer learning. However, this experiements
-differentiating factor, which is that it provides a comparison of how transfer learning applies
-to different models in the VGG family, was successfull. The experiement showed that the complexity
-of the feature extraction layer does not necessary lend itself to much higher performance. Since
-the goal of this experiment was to train a model using as little computational resources as
-possible, I dare to say that the findings are benificial. In addition, this experiments
-use of data-augmentation in the transfer-learning context demonstrated that transfer learning
-coupled with data-augmentaiton is a viable approah for training complex models with relatively
-few class examples. Its unlikely that the bird dataset contains enough examples to train any
-meaningfull feature extraction.
-
-Based on these results, unless the task demands very high accuracy I would recommend using VGG11
-as the base model for transfer learning applications. VGG11 demands a lower computational cost
-to train, has a smaller epoch time, and achieved roughly the same results as VGG19. 
