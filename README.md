@@ -16,16 +16,6 @@ cd bird_utils
 pip install -e .
 ```
 
-[Project Video Available Here!!](https://youtu.be/QvrcDlf6m3A)
-
-## Problem Discription
-
-Training an entire deep learning model, such as models from the VGG family is very computationally
-intense. Just training VGG11 requires more VRAM than is available in mose top-of the line CPU's
-for example. Thankfully, depending on the dataset only part of the network needs to be retrained.
-This experiment seeks to establish, between VGG11 and VGG19, is the most fit for this "partial
-retraining" process.
-
 ## Datasets
 
 All retraining in this experiment was conducted by me using the bird classification dataset. The
